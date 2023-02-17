@@ -71,9 +71,9 @@ export default function Navbar() {
                 >
                   Our ingredients
                 </Link>
-                {/* <a href="#" className="text-primary hover:underline">
+                <Link href="/about" className="text-primary hover:underline">
                   Our story
-                </a> */}
+                </Link>
               </Popover.Group>
             </div>
           </div>

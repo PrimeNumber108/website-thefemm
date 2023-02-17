@@ -71,7 +71,7 @@ const About = () => {
             </p>
             <div className="mt-10 md:mt-14">
               <button className="btn btn-white-outline w-fit">
-                <Link to="/products">GET YOUR ROUTINE</Link>
+                <Link href="/products">GET YOUR ROUTINE</Link>
               </button>
             </div>
           </div>
@@ -102,7 +102,7 @@ const About = () => {
             </p>
             <div className="mt-10 md:mt-14">
               <button className="btn btn-primary-outline w-fit">
-                <Link to="/ingredients">SEE ALL INGREDIENTS</Link>
+                <Link href="/ingredients">SEE ALL INGREDIENTS</Link>
               </button>
             </div>
           </div>
@@ -157,7 +157,7 @@ const About = () => {
           </p>
           <div className="">
             <button className="btn btn-white-outline w-fit">
-              <Link to="/products">SEE WHAT&apos;S OPEN</Link>
+              <Link href="/products">SEE WHAT&apos;S OPEN</Link>
             </button>
           </div>
         </div>

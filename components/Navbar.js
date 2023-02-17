@@ -71,34 +71,10 @@ export default function Navbar() {
                 >
                   Our ingredients
                 </Link>
-                <a href="#" className="text-primary hover:underline">
+                {/* <a href="#" className="text-primary hover:underline">
                   Our story
-                </a>
-                <a href="#" className="text-primary hover:underline">
-                  Reviews
-                </a>
-                <a href="#" className="text-primary hover:underline">
-                  Gift Prose
-                </a>
-                <a href="#" className="text-primary hover:underline">
-                  Subscribe for 15% off
-                </a>
+                </a> */}
               </Popover.Group>
-            </div>
-
-            <div className="lg:flex lg:w-fit hidden items-center justify-end gap-10">
-              <a href="#" className="text-primary hover:underline">
-                Get your formula
-              </a>
-              <a href="#" className="text-primary hover:underline">
-                Sign in
-              </a>
-            </div>
-
-            <div className="lg:hidden">
-              <a href="#" className="text-primary hover:underline">
-                Get start
-              </a>
             </div>
           </div>
         </div>

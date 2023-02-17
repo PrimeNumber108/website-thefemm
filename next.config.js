@@ -2,8 +2,8 @@
 const nextConfig = {
   trailingSlash: true,
   images: {
-    loader: "imgix",
-    path: "/",
+    unoptimized: true,
+    formats: ["image/avif", "image/webp"],
   },
 };
 

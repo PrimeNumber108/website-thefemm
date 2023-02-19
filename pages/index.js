@@ -2,22 +2,30 @@ import HeroCarousel from "@/components/Carousel/HeroCarousel";
 import PartnerCarousel from "@/components/Carousel/PartnerCarousel";
 import Feedback from "@/module/home/Feedback";
 import HeroSection from "@/components/HeroSection";
-import ImageBanner from "@/module/home/ImageBanner";
 import ImageGallery from "@/module/home/ImageGallery";
 import ImageSection from "@/components/ImageSection";
 import ProductSection from "@/module/home/ProductSection";
 import Works from "@/module/home/Works";
 import Image from "next/image";
-import Marquee from "react-fast-marquee";
+import Link from "next/link";
+import CustomMarquee from "@/module/home/Marquee";
+import TextLoader from "@/components/TextLoader";
 
 export default function Home() {
   return (
     <div>
       <HeroSection
-        image={"/image/banner/1.jpg"}
+        image={
+          <Image
+            src="/image/banner/home-1.jpg"
+            className="w-full h-full object-cover object-top -z-10"
+            alt="kasomo-banner"
+            fill
+          />
+        }
         placement="right"
         content={
-          <div className="w-full h-full flex justify-center lg:items-center items-start lg:px-6 sm:p-16 pt-16 px-6">
+          <div className="w-full h-full flex justify-center lg:items-center items-start lg:-ml-20 -ml-0 lg:px-6 sm:p-16 pt-16 px-6">
             <div className="w-full sm:w-[500px] flex-center flex-col gap-9">
               <h3 className="text-heading text-center">
                 Transform your hair with intensive care
@@ -25,21 +33,32 @@ export default function Home() {
               <p className="text-primary text-center leading-6">
                 Discover your routine, from hair products to hair accessories.
               </p>
-              <button className="btn btn-primary">SHOP ALL BEST SELLERS</button>
+              <Link href="/products">
+                <button className="btn btn-primary">
+                  SHOP ALL BEST SELLERS
+                </button>
+              </Link>
             </div>
           </div>
         }
       />
-      <Marquee />
+      <CustomMarquee />
       <HeroSection
-        image={"/image/banner/2.jpg"}
+        image={
+          <Image
+            src={"/image/banner/home-2.jpg"}
+            className="w-full h-full object-cover object-right-top -z-10"
+            alt="kasomo-banner"
+            fill
+          />
+        }
         placement="left"
         content={
-          <div className="w-full h-full lg:pt-[200px] lg:pl-[144px] px-[40px] py-[56px]">
-            <div className="w-full sm:w-[320px] flex justify-center flex-col gap-9">
+          <div className="w-full h-full flex justify-center lg:items-center items-start lg:px-6 sm:p-16 pt-16 px-6">
+            <div className="w-full sm:w-[310px] flex justify-center flex-col gap-9">
               <h3 className="text-heading">Tested, Clean & Multi-use</h3>
               <p className="text-primary leading-6">
-                Hair loss and thinning hair routine are designed for sensitive
+                Hair loss and thinning hair routines are designed for sensitive
                 scalps as well as frizzy, damaged, and balding hair. No alcohol,
                 silicone, or parabens.
               </p>
@@ -51,11 +70,18 @@ export default function Home() {
         }
       />
       <HeroSection
-        image={"/image/banner/3.jpg"}
+        image={
+          <Image
+            src={"/image/banner/home-3.jpg"}
+            className="w-full h-full object-cover object-left-top -z-10"
+            alt="kasomo-banner"
+            fill
+          />
+        }
         placement="right"
         content={
           <div className="w-full h-full flex justify-center lg:items-center items-start lg:px-6 sm:p-16 pt-16 px-6 text-center lg:text-left">
-            <div className="w-full sm:w-[500px] flex justify-center flex-col gap-9">
+            <div className="w-full sm:w-[500px] flex justify-center lg:items-start items-center flex-col gap-9">
               <span className="text-label text-white">
                 Welcome to KASOMO Hair Care Zone
               </span>
@@ -72,11 +98,17 @@ export default function Home() {
                 <br />
                 For you. For the planet. For all.
               </p>
-              <div>
-                <span className="text-white tracking-[1px] border-b border-white w-fit pb-2 text-center lg:text-left">
-                  ABOUT US
-                </span>
-              </div>
+              <TextLoader
+                theme="light"
+                content={
+                  <Link
+                    href="about"
+                    className="block text-white tracking-[1px] w-fit pb-2"
+                  >
+                    ABOUT US
+                  </Link>
+                }
+              />
             </div>
           </div>
         }
@@ -157,7 +189,21 @@ export default function Home() {
       <Feedback />
       <PartnerCarousel />
       <ImageGallery />
-      <ImageBanner />
+      <div className="relative w-full h-fit">
+        <Image
+          src="/image/banner/6.jpg"
+          alt="Kasomo banner"
+          width={1900}
+          height={355}
+          className="w-full h-[355px]"
+        />
+        <div className="absolute inset-0 bg-black opacity-10"></div>
+        <div className="absolute inset-0 flex-center">
+          <h3 className="text-heading lg:text-6xl text-2xl">
+            Luxury comes in one size. Yours.
+          </h3>
+        </div>
+      </div>
     </div>
   );
 }

@@ -6,15 +6,15 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+
   return (
-    <header className="sticky top-0 left-0 w-full z-20">
+    <header className="sticky top-0 left-0 w-full z-50">
       <AnnouncementBar />
       <Popover className="sticky bg-white">
         <div className="mx-auto max-w-screen shadow lg:px-16 px-6">
           <div className="flex items-center justify-between py-4">
             <div className="lg:hidden">
               <Popover.Button>
-                {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
                 <span
                   href="#"
                   onClick={() => setOpen(true)}
@@ -26,42 +26,8 @@ export default function Navbar() {
             </div>
 
             <div className="lg:flex-1 lg:w-0 flex justify-start items-center gap-10">
-              <Link href="/">
-                KASOMO
-                {/* <Image
-                  className="h-8 w-8 sm:h-10"
-                  src="https://tailwindui.com/img/logos/mark.svg"
-                  alt=""
-                  width={32}
-                  height={32}
-                /> */}
-              </Link>
+              <Link href="/">KASOMO</Link>
               <Popover.Group as="nav" className="lg:flex hidden space-x-10">
-                {/* <Popover className="relative">
-                  <>
-                    <Popover.Button className="group inline-flex items-center text-primary hover:underline hover:outline-none focus:outline-none">
-                      <span>Our porudcts</span>
-                      <ChevronDownIcon
-                        className="ml-2 h-5 w-5"
-                        aria-hidden="true"
-                      />
-                    </Popover.Button>
-
-                    <Transition
-                      as={Fragment}
-                      enter="transition ease-out duration-200"
-                      enterFrom="opacity-0 translate-y-1"
-                      enterTo="opacity-100 translate-y-0"
-                      leave="transition ease-in duration-150"
-                      leaveFrom="opacity-100 translate-y-0"
-                      leaveTo="opacity-0 translate-y-1"
-                    >
-                      <Popover.Panel className="absolute mt-4 z-10 sm:px-0 lg:left-0 lg:-ml-6">
-                        <div className="w-40 p-6 bg-white">Hello</div>
-                      </Popover.Panel>
-                    </Transition>
-                  </>
-                </Popover> */}
                 <Link href="/products" className="text-primary hover:underline">
                   Our products
                 </Link>
@@ -122,36 +88,34 @@ export default function Navbar() {
                         </div>
                         <div className="relative mt-10 flex-1 px-4 sm:px-6">
                           <div className="flex flex-col gap-10">
-                            <a
-                              href="#"
+                            <Link
+                              href="/"
                               className="text-2xl font-serif text-primary hover:underline"
+                              onClick={() => setOpen(false)}
+                            >
+                              Home
+                            </Link>
+                            <Link
+                              href="/products"
+                              className="text-2xl font-serif text-primary hover:underline"
+                              onClick={() => setOpen(false)}
+                            >
+                              Our products
+                            </Link>
+                            <Link
+                              href="/ingredients"
+                              className="text-2xl font-serif text-primary hover:underline"
+                              onClick={() => setOpen(false)}
                             >
                               Our ingredients
-                            </a>
-                            <a
-                              href="#"
+                            </Link>
+                            <Link
+                              href="/about"
                               className="text-2xl font-serif text-primary hover:underline"
+                              onClick={() => setOpen(false)}
                             >
                               Our story
-                            </a>
-                            <a
-                              href="#"
-                              className="text-2xl font-serif text-primary hover:underline"
-                            >
-                              Reviews
-                            </a>
-                            <a
-                              href="#"
-                              className="text-2xl font-serif text-primary hover:underline"
-                            >
-                              Gift Prose
-                            </a>
-                            <a
-                              href="#"
-                              className="text-2xl font-serif text-primary hover:underline"
-                            >
-                              Subscribe for 15% off
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

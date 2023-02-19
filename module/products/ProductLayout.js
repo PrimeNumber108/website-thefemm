@@ -24,7 +24,7 @@ const products = [
   {
     front: "/image/product/5-front.png",
     back: "/image/product/5-back.jpg",
-    name: "Kasomo Hair",
+    name: "Kasomo Scalp Massager",
   },
 ];
 const ProductLayout = () => {

@@ -19,7 +19,7 @@ const Products = () => {
         }
       />
       <ProductLayout />
-      <div className="container pt-0 flex-center md:flex-row flex-col gap-8">
+      <div className="container max-w-[1600px] pt-0 flex-center md:flex-row flex-col gap-8">
         <ProductAds
           image="/image/product/8.jpg"
           content="Discover your hair care routine for fuller, stronger, softer hair"

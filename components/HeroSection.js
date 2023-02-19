@@ -10,7 +10,7 @@ const HeroSection = ({ image, placement = "right", content }) => {
           <Image
             src={image}
             className="w-full h-full object-cover object-top -z-10"
-            alt="banner"
+            alt="kasomo-banner"
             fill
           />
         ) : (

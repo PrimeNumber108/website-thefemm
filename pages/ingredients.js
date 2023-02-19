@@ -1,6 +1,7 @@
 import IngredientsCarousel from "@/components/Carousel/IngredientCarousel";
 import HeroSection from "@/components/HeroSection";
 import ImageSection from "@/components/ImageSection";
+import TextLoader from "@/components/TextLoader";
 import Image from "next/image";
 import React from "react";
 
@@ -22,9 +23,7 @@ const Ingredients = () => {
                 the globe. If it’s not high quality or highly efficacious, we
                 won’t use it.
               </p>
-              <span className="w-fit pb-1 border-b-2 border-solid border-[#ffa380]">
-                EXPLORE INGREDIENTS
-              </span>
+              <TextLoader content={"EXPLORE INGREDIENTS"} />
             </div>
           </div>
         }

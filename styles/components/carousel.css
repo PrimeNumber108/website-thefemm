@@ -9,7 +9,7 @@
 }
 
 .partner-carousel .swiper-pagination-bullet {
-  @apply border-black bg-black;
+  @apply border-white bg-white;
 }
 
 .ingredient-carousel .swiper {
@@ -20,5 +20,5 @@
   @apply bg-black h-auto text-center;
 }
 .ingredient-carousel .swiper-content {
-  @apply h-full
+  @apply h-full;
 }

@@ -1,5 +1,5 @@
 .btn {
-  @apply px-10 py-4 sm:px-14 sm:py-5 font-bold text-sm text-center uppercase border border-solid rounded-sm shadow-md cursor-pointer;
+  @apply px-10 py-4 sm:px-14 sm:py-5 font-bold text-sm text-center uppercase border border-solid rounded-sm shadow-md cursor-pointer transition-all duration-300;
   word-spacing: 3px;
   letter-spacing: 1px;
 }
@@ -8,12 +8,16 @@
   @apply bg-primary text-white border-primary;
 }
 
+.btn-primary:hover {
+  @apply bg-white text-primary border-primary;
+}
+
 .btn-primary-outline {
   @apply bg-transparent text-primary border-primary;
 }
 
 .btn-primary-outline:hover {
-  @apply bg-white text-primary border-primary;
+  @apply bg-primary text-white border-primary;
 }
 
 .btn-secondary {
@@ -26,6 +30,10 @@
 
 .btn-white {
   @apply bg-white text-primary border-white;
+}
+
+.btn-white:hover {
+  @apply bg-transparent text-white border-white;
 }
 
 .btn-white-outline {

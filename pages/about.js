@@ -28,13 +28,12 @@ const About = () => {
             viewBox="0 0 8 100"
             width="8"
             xmlns="http://www.w3.org/2000/svg"
-            class="css-hx1s1z-I-path css-27-I-inView-ref"
           >
             <path
               d="m1 100c0-3.845 6-3.845 6-7.69s-6-3.845-6-7.691c0-3.845 6-3.845 6-7.69 0-3.847-6-3.847-6-7.693 0-3.843 6-3.843 6-7.687 0-3.845-6-3.845-6-7.691 0-3.845 6-3.845 6-7.69 0-3.846-6-3.846-6-7.69 0-3.847 6-3.847 6-7.694s-6-3.847-6-7.695c0-3.846 6-3.846 6-7.693 0-3.849-6-3.849-6-7.698s6-3.849 6-7.698"
               fill="none"
               stroke="#daa855"
-              stroke-width="2"
+              strokeWidth="2"
             ></path>
           </svg>
         </div>
@@ -109,7 +108,7 @@ const About = () => {
         }
         image={
           <Image
-            src="/image/banner/11.jpg"
+            src="/image/banner/14.jpg"
             alt="KASOMO"
             width={1440}
             height={1440}
@@ -127,7 +126,7 @@ const About = () => {
               We’re a company who wants to change beauty practices, so we’re
               changing the way beauty companies practice. As a certified B
               Corporation, we’re proving that good business is always
-              sustainable. With Prose, there’s nothing sacrificed to bring you
+              sustainable. With Kasomo, there’s nothing sacrificed to bring you
               great hair—not trees, materials, wages, or performance. We can all
               thrive together.
             </p>
@@ -149,9 +148,9 @@ const About = () => {
             Paris meets New York meets...you?
           </h3>
           <p className="text-white">
-            Founded in France, Prose operates proudly out of Brooklyn, where our
-            HQ dreams up what’s next and our factory bottles every product fresh
-            to order; the lab remains in the heart of Paris. If you’re
+            Founded in France, Kasomo operates proudly out of Brooklyn, where
+            our HQ dreams up what’s next and our factory bottles every product
+            fresh to order; the lab remains in the heart of Paris. If you’re
             interested in what we do, we’re always looking to add to our richly
             diverse and talented team.
           </p>

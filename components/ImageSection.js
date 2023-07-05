@@ -7,6 +7,7 @@ const ImageSection = ({
   content,
   placement = "right",
   className = "",
+  imageClassName = "",
 }) => {
   return (
     <div
@@ -19,7 +20,9 @@ const ImageSection = ({
           {content}
         </div>
       </div>
-      <div className="relative lg:w-1/2 w-full lg:h-full h-[500px]">
+      <div
+        className={`relative lg:w-1/2 w-full lg:h-full h-[500px] ${imageClassName}`}
+      >
         {isString(image) ? (
           <Image
             src={image}

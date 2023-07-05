@@ -4,13 +4,13 @@ import React from "react";
 
 const HeroSection = ({ image, placement = "right", content }) => {
   return (
-    <div className="relative w-full min-h-[calc(100vh-95px)] flex">
+    <div className="relative w-full min-h-[calc(100vh-80px)] flex">
       <div className="absolute inset-0">
         {isString(image) ? (
           <Image
             src={image}
             className="w-full h-full object-cover object-top -z-10"
-            alt="kasomo-banner"
+            alt="casimi-banner"
             fill
           />
         ) : (

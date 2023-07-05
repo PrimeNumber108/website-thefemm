@@ -14,7 +14,7 @@ const ProductAds = ({ image, content }) => {
         />
       </div>
       <div className="absolute inset-0 flex-center">
-        <p className="px-10 text-heading text-center sm:text-4xl text-3xl text-white">
+        <p className="px-8 text-heading text-center sm:text-3xl text-2xl text-white">
           {content}
         </p>
       </div>

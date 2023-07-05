@@ -2,29 +2,24 @@ import React from "react";
 import Image from "next/image";
 const products = [
   {
-    front: "/image/product/1-front.jpg",
-    back: "/image/product/1-back.jpg",
-    name: "Kasomo Hair Spray",
+    src: "/image/mkt-1.jpeg",
+    name: "Facebook Marketing",
   },
   {
-    front: "/image/product/2-front.jpg",
-    back: "/image/product/2-back.jpg",
-    name: "Kasomo Hair Shampoo",
+    src: "/image/mkt-2.jpg",
+    name: "Google Marketing",
   },
   {
-    front: "/image/product/3-front.jpg",
-    back: "/image/product/3-back.jpg",
-    name: "Kasomo Hair Mask",
+    src: "/image/mkt-3.jpg",
+    name: "Tiktok Marketing",
   },
   {
-    front: "/image/product/4-front.jpg",
-    back: "/image/product/4-back.jpg",
-    name: "Kasomo Hair & Scalp Derma Roller",
+    src: "/image/mkt-4.jpeg",
+    name: "Marketing Offline",
   },
   {
-    front: "/image/product/5-front.png",
-    back: "/image/product/5-back.jpg",
-    name: "Kasomo Scalp Massager",
+    src: "/image/mkt-5.jpg",
+    name: "Branding",
   },
 ];
 const ProductLayout = () => {
@@ -35,18 +30,11 @@ const ProductLayout = () => {
           <div key={index} className="mx-auto">
             <div className="product-box max-w-[250px] h-auto lg:mt-[40px] mt-[20px]">
               <Image
-                src={product.front}
-                alt="KASOMO"
+                src={product.src}
+                alt={product.name}
                 width={250}
                 height={330}
-                className="product-image product-image--front"
-              />
-              <Image
-                src={product.back}
-                alt="KASOMO"
-                width={250}
-                height={330}
-                className="product-image product-image--back"
+                className="product-image product-image--front object-cover w-full h-full"
               />
             </div>
             <div className="text-center mt-3 font-serif text-xl">

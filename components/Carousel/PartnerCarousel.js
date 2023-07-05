@@ -73,7 +73,7 @@ const PartnerCarousel = () => {
                   alt="logo"
                   width={150}
                   height={37}
-                  className="w-36 h-9"
+                  className="w-36 h-9 object-contain"
                 />
               </div>
             </SwiperSlide>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -6,7 +7,7 @@ const Footer = () => {
     <div className="flex lg:flex-row flex-col-reverse">
       <div
         style={{
-          flex: "2 1 0%",
+          flex: "1.5 1 0%",
         }}
       >
         <div className="grid lg:grid-cols-4 sm:grid-cols-3 lg:px-28 lg:py-[140px] py-[72px] bg-[#1C2121] text-white">
@@ -21,31 +22,18 @@ const Footer = () => {
             <span>Terms of use</span>
             <span>Accessibility</span>
           </div>
-          <div className="lg:col-span-1 col-span-3 justify-items-center flex justify-center align-top gap-5 lg:mt-0 mt-12">
-            <Image
-              src="/image/icon/footer-1.png"
-              alt=""
-              width={70}
-              height={115}
-              className="w-auto h-[115px]"
-            />
-            <Image
-              src="/image/icon/footer-2.png"
-              alt=""
-              width={70}
-              height={115}
-              className="w-auto h-[115px]"
-            />
-          </div>
           <div className="lg:col-span-4 col-span-3 space-y-5 lg:text-left text-center mt-12">
             <div className="flex lg:justify-start justify-center gap-10">
-              <Image
-                src="/image/icon/facebook.png"
-                alt="facebook"
-                width={20}
-                height={20}
-                className="invert w-6 h-6"
-              />
+              <Link href="https://www.facebook.com/kasomo.haircare/">
+                <Image
+                  src="/image/icon/facebook.png"
+                  alt="facebook"
+                  width={20}
+                  height={20}
+                  className="invert w-6 h-6"
+                />
+              </Link>
+
               <Image
                 src="/image/icon/instagram.png"
                 alt="instagram"
@@ -68,7 +56,6 @@ const Footer = () => {
                 className="invert w-6 h-6"
               />
             </div>
-            <p className="text-label text-bbb">© 2023 PERSÉ BEAUTY INC</p>
             <p className="text-label text-bbb">SITE MAP</p>
             <p className="text-label text-bbb">
               DO NOT SELL MY PERSONAL INFORMATION
@@ -77,10 +64,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex-1 px-16 lg:py-0 py-14 bg-black flex-center flex-col gap-5">
-        <p className="text-heading text-2xl text-white text-center">
-          10 Years of Elite Hair Care <br /> as Unique as You
+        <p className="lg:w-[80%] text-heading text-2xl text-white text-center lowercase">
+          10 YEARS OF EXPERIENCE IN CONSULTING AND IMPLEMENTING ONLINE MARKETING
+          STRATEGIES.
         </p>
-        <button className="btn btn-white">SHOP ALL BEST SELLERS</button>
+        <Link href="/about" className="block tracking-[1px] w-fit pb-2">
+          <button className="btn btn-white w-fit">ABOUT US</button>
+        </Link>
       </div>
     </div>
   );

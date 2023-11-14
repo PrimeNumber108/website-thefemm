@@ -7,33 +7,29 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 left-0 w-full z-50">
+    <header className="sticky top-0 left-0 z-50 w-full">
       <Popover className="sticky bg-white">
-        <div className="mx-auto max-w-screen shadow lg:px-16 px-6">
+        <div className="px-6 mx-auto shadow max-w-screen lg:px-16">
           <div className="flex items-center justify-between py-4">
             <div className="lg:hidden">
               <Popover.Button>
-                <span
-                  href="#"
-                  onClick={() => setOpen(true)}
-                  className="text-primary hover:underline"
-                >
+                <span href="#" onClick={() => setOpen(true)} className="text-primary hover:underline">
                   Menu
                 </span>
               </Popover.Button>
             </div>
 
-            <div className="lg:flex-1 lg:w-0 flex justify-start items-center gap-10">
+            <div className="flex items-center justify-start gap-10 lg:flex-1 lg:w-0">
               <Link href="/">CASAMI</Link>
-              <Popover.Group as="nav" className="lg:flex hidden space-x-10">
-                <Link
-                  href="/our-services"
-                  className="text-primary hover:underline"
-                >
+              <Popover.Group as="nav" className="hidden space-x-10 lg:flex">
+                <Link href="/our-services" className="text-primary hover:underline">
                   Our services
                 </Link>
                 <Link href="/about" className="text-primary hover:underline">
                   About us
+                </Link>
+                <Link href="/our-product" className="text-primary hover:underline">
+                  Our Product
                 </Link>
               </Popover.Group>
             </div>
@@ -51,12 +47,12 @@ export default function Navbar() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+              <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75" />
             </Transition.Child>
 
-            <div className="fixed inset-0 overflow-hidden z-50">
+            <div className="fixed inset-0 z-50 overflow-hidden">
               <div className="absolute inset-0 overflow-hidden">
-                <div className="pointer-events-none fixed inset-y-0 left-0 flex max-w-full">
+                <div className="fixed inset-y-0 left-0 flex max-w-full pointer-events-none">
                   <Transition.Child
                     as={Fragment}
                     enter="transform transition ease-in-out duration-500 sm:duration-700"
@@ -66,43 +62,44 @@ export default function Navbar() {
                     leaveFrom="translate-x-0"
                     leaveTo="-translate-x-full"
                   >
-                    <Dialog.Panel className="pointer-events-auto relative w-screen max-w-md z-50">
-                      <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
-                        <div className="flex justify-between items-center px-4 sm:px-6">
-                          <Dialog.Title className="text-lg text-gray-600">
-                            Menu
-                          </Dialog.Title>
-                          <button
-                            type="button"
-                            className="rounded-md text-gray-600"
-                            onClick={() => setOpen(false)}
-                          >
+                    <Dialog.Panel className="relative z-50 w-screen max-w-md pointer-events-auto">
+                      <div className="flex flex-col h-full py-6 overflow-y-scroll bg-white shadow-xl">
+                        <div className="flex items-center justify-between px-4 sm:px-6">
+                          <Dialog.Title className="text-lg text-gray-600">Menu</Dialog.Title>
+                          <button type="button" className="text-gray-600 rounded-md" onClick={() => setOpen(false)}>
                             <span className="sr-only">Close panel</span>
-                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                            <XMarkIcon className="w-6 h-6" aria-hidden="true" />
                           </button>
                         </div>
-                        <div className="relative mt-10 flex-1 px-4 sm:px-6">
+                        <div className="relative flex-1 px-4 mt-10 sm:px-6">
                           <div className="flex flex-col gap-10">
                             <Link
                               href="/"
-                              className="text-2xl font-serif text-primary hover:underline"
+                              className="font-serif text-2xl text-primary hover:underline"
                               onClick={() => setOpen(false)}
                             >
                               Home
                             </Link>
                             <Link
                               href="/our-services"
-                              className="text-2xl font-serif text-primary hover:underline"
+                              className="font-serif text-2xl text-primary hover:underline"
                               onClick={() => setOpen(false)}
                             >
                               Our services
                             </Link>
                             <Link
                               href="/about"
-                              className="text-2xl font-serif text-primary hover:underline"
+                              className="font-serif text-2xl text-primary hover:underline"
                               onClick={() => setOpen(false)}
                             >
                               About us
+                            </Link>
+                            <Link
+                              href="/our-product"
+                              className="font-serif text-2xl text-primary hover:underline"
+                              onClick={() => setOpen(false)}
+                            >
+                              Our product
                             </Link>
                           </div>
                         </div>

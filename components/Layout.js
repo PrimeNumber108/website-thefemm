@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
 
   if (loading) {
     return (
-      <div className="w-full h-screen flex-center bg-white p-10 shadow-md rounded-xl relative">
+      <div className="relative w-full h-screen p-10 bg-white shadow-md flex-center rounded-xl">
         <svg
           className="w-20 h-20 animate-spin text-primary"
           viewBox="0 0 24 24"

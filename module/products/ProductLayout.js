@@ -18,23 +18,23 @@ const products = [
     name: "Marketing Offline",
   },
   {
-    src: "/image/mkt-5.jpg",
+    src: "/image/mkt-5.webp",
     name: "Branding",
   },
 ];
 const ProductLayout = () => {
   return (
     <div className="relative container lg:pt-[100px] pt-[50px]">
-      <div className="grid lg:grid-cols-3 grid-cols-2 gap-6">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
         {products.map((product, index) => (
           <div key={index} className="mx-auto">
-            <div className="product-box max-w-[250px] h-auto lg:mt-[40px] mt-[20px]">
+            <div className="product-box w-[250px] max-h-[160px] lg:mt-[40px] mt-[20px]">
               <Image
                 src={product.src}
                 alt={product.name}
                 width={250}
                 height={330}
-                className="product-image product-image--front object-cover w-full h-full"
+                className="product-image product-image--front object-top"
               />
             </div>
             <div className="text-center mt-3 font-serif text-xl">

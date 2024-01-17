@@ -12,7 +12,14 @@ const Footer = () => {
   return (
     <>
       <Modal open={showModalContact} setOpen={setShowModalContact} title="Contact us">
-        <p className="text-xl leading-8">R1517 Winkong Plaza No. 577 Jingang Ave, Nansha Dist, Guangzhou, China.</p>
+        <p className="text-xl leading-8">
+          We are here to listen and help. If you have any questions, problems or requests regarding our products or
+          brands, please contact us via email:{" "}
+          <Link className="text-blue-500 underline" href="mailto:hello.casami.ai@gmail.com" target="_blank">
+            hello.casami.ai@gmail.com
+          </Link>
+          .
+        </p>
       </Modal>
       <Modal open={showModalDelivery} setOpen={setShowModalDelivery} title="Delivery information">
         <p className="text-xl leading-8">

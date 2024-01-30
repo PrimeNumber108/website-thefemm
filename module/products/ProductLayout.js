@@ -2,30 +2,22 @@ import React from "react";
 import Image from "next/image";
 const products = [
   {
-    src: "/image/mkt-1.jpeg",
-    name: "Facebook Marketing",
+    src: "/image/services/facebook.jpg",
+    name: "Facebook Advertising",
   },
   {
-    src: "/image/mkt-2.jpg",
-    name: "Google Marketing",
+    src: "/image/services/google.jpg",
+    name: "Google Advertising",
   },
   {
-    src: "/image/mkt-3.jpg",
-    name: "Tiktok Marketing",
-  },
-  {
-    src: "/image/mkt-4.jpeg",
-    name: "Marketing Offline",
-  },
-  {
-    src: "/image/mkt-5.webp",
-    name: "Branding",
+    src: "/image/services/tiktok.jpg",
+    name: "Tiktok Advertising",
   },
 ];
 const ProductLayout = () => {
   return (
-    <div className="relative container lg:pt-[100px] pt-[50px]">
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
+    <div className="relative container lg:pt-[90px] pt-[30px]">
+      <div className="grid gap-6 lg:grid-cols-3 sm:grid-cols-2">
         {products.map((product, index) => (
           <div key={index} className="mx-auto">
             <div className="product-box w-[250px] max-h-[160px] lg:mt-[40px] mt-[20px]">
@@ -34,10 +26,10 @@ const ProductLayout = () => {
                 alt={product.name}
                 width={250}
                 height={330}
-                className="product-image product-image--front object-top"
+                className="object-top product-image product-image--front"
               />
             </div>
-            <div className="text-center mt-3 font-serif text-xl">
+            <div className="mt-3 font-serif text-xl text-center">
               <p>{product.name}</p>
             </div>
           </div>

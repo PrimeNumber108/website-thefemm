@@ -5,37 +5,30 @@ import classnames from "classnames";
 
 const users = [
   {
-    name: "Sovan DY",
+    name: "Mark Dickens",
     comment:
-      "A wonderful site for online shopping! Excellent customer service throughout the entire process. The team is knowledgeable and goes above and beyond at every turn. I’d recommend their FEG hair growth spray.",
-    image: "/image/users/user-1.jpg",
+      "We have expanded our business thanks to Marketing solutions that FINERY WORLD advises. You are very enthusiastic and professional!",
+    image: "/image/users/user-1.jpeg",
     rating: 5,
   },
   {
-    name: "Berlinda De la Cruz",
+    name: "Erin Meyer",
     comment:
-      "Very good product, just used only 8 days so can not see the visible results but i feel comfortable and fresh when applied, no side effects. 4 stars because delivery is a little bit slow.",
-    image: "/image/users/user-2.jpg",
+      "My company has been a customer of FINERY WORLD since 2021. We will continue to be your customer in the coming years.",
+    image: "/image/users/user-2.jpeg",
+    rating: 5,
+  },
+  {
+    name: "Giovanni Cunsolo",
+    comment: "My business in India. I am satisfied with the solutions you have brought.",
+    image: "/image/users/user-3.jpeg",
     rating: 4,
   },
   {
-    name: "Venus Amanda",
+    name: "Richard Taveira",
     comment:
-      "I got a hair serum from FEG and I’m very satisfied. They are high-quality and worth the money. The store also offered free shipping at that price so that’s a plus!",
-    image: "/image/users/user-3.png",
-    rating: 5,
-  },
-  {
-    name: "Jane Amatsu",
-    comment: "Pricing is fair and transparent - definitely value for money.",
-    image: "/image/users/user-4.png",
-    rating: 5,
-  },
-  {
-    name: "Jennifer Abraham",
-    comment:
-      "The product quality is consistently outstanding, exceeding my expectations every time. Also I was completely impressed with their professionalism and customer service. 5 stars absolutely.",
-    image: "/image/users/user-5.png",
+      "Our business has increased revenue by 80% compared to 2022 thanks to your effective advertising solution.",
+    image: "/image/users/user-4.jpeg",
     rating: 5,
   },
 ];
@@ -43,26 +36,29 @@ const users = [
 export default function Home() {
   return (
     <div>
-      <div className="relative">
-        <video className="brightness-90" autoPlay={true} muted loop>
-          <source src="/video/banner.mp4" type="video/mp4"></source>
-        </video>
+      <div className="relative w-full h-screen">
+        <img
+          className="object-cover w-full h-full brightness-[0.85]"
+          src="/image/banners/banner-1.jpg"
+          alt="fineryworld"
+        />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-full sm:w-[500px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-white text-heading">CASAMI</h3>
+            <h3 className="text-white text-heading">FINERY WORLD</h3>
             <p className="leading-6 text-center text-white">
-              We are confident in our ability to provide the most effective Marketing strategies for your company.
+              Welcome to the official website of FINERY WORLD - A company providing professional and effective online
+              marketing and advertising solutions.
             </p>
           </div>
         </div>
       </div>
-      <div className="relative w-full min-h-[calc(100vh-80px)]">
+      <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/image/banner-1.jpg"
-            alt="casami-banner"
+            src="/image/banners/banner-2.jpg"
+            alt="fineryworld"
             fill
-            className="object-cover object-center w-full h-full -z-10 brightness-50"
+            className="object-cover object-center w-full h-full -z-10 brightness-[0.8]"
           />
         </div>
         <div className="absolute inset-0 flex">
@@ -70,8 +66,7 @@ export default function Home() {
             <div className="flex items-center justify-center w-full h-full px-8 pt-16 lg:px-6 sm:p-16">
               <div className="w-full sm:w-[600px] flex justify-center items-center lg:text-start text-center flex-col gap-9">
                 <p className="px-8 text-2xl text-center text-white sm:px-0">
-                  We will provide you with Online Marketing solutions that meet the following criteria: minimizing
-                  costs, growing revenue, and enhancing profits.
+                  FINERY WORLD provides consulting services for online marketing and advertising solutions.
                 </p>
                 <Link href="/our-services" className="block text-white tracking-[1px] w-fit pb-2">
                   <button className="btn btn-primary w-fit">OUR SERVICES</button>
@@ -81,13 +76,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative w-full min-h-[calc(100vh-80px)]">
+      <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/image/banner-6.jpeg"
-            alt="casami-banner"
+            src="/image/banners/banner-3.jpg"
+            alt="fineryworldr"
             fill
-            className="object-cover object-center w-full h-full -z-10 brightness-50"
+            className="object-cover object-center w-full h-full -z-10 brightness-[0.8]"
           />
         </div>
         <div className="absolute inset-0 flex">
@@ -95,8 +90,8 @@ export default function Home() {
             <div className="flex items-center justify-center w-full h-full px-8 pt-16 lg:px-6 sm:p-16">
               <div className="w-full sm:w-[600px] flex justify-center items-center lg:text-start text-center flex-col gap-9">
                 <p className="px-8 text-2xl text-center text-white sm:px-0">
-                  Our company was founded by a group of Marketing specialists with over 20 years of experience and a
-                  team of highly qualified individuals.
+                  After 6 years of formation and development, FINERY WORLD currently has more than 130 employees,
+                  including a team of experienced experts in the field of Marketing and online advertising.
                 </p>
                 <Link href="/about" className="block text-white tracking-[1px] w-fit pb-2">
                   <button className="btn btn-primary w-fit">ABOUT US</button>
@@ -107,7 +102,7 @@ export default function Home() {
         </div>
       </div>
       <div className="px-[21px] lg:py-16 lg:px-14 py-10">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {users.map((user, index) => (
             <div
               key={index}
@@ -119,7 +114,7 @@ export default function Home() {
                 {[...Array(5)].map((_, index) => (
                   <svg
                     key={index}
-                    class={classnames("w-5 h-5", index + 1 <= user.rating ? "text-yellow-300" : "text-gray-300")}
+                    className={classnames("w-5 h-5", index + 1 <= user.rating ? "text-yellow-300" : "text-gray-300")}
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"

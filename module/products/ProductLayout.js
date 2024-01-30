@@ -2,16 +2,24 @@ import React from "react";
 import Image from "next/image";
 const products = [
   {
-    src: "/image/services/facebook.jpg",
-    name: "Facebook Advertising",
+    src: "/image/services/service-1.jpg",
+    name: "TikTok Marketing",
   },
   {
-    src: "/image/services/google.jpg",
-    name: "Google Advertising",
+    src: "/image/services/service-2.webp",
+    name: "Plan Development",
   },
   {
-    src: "/image/services/tiktok.jpg",
-    name: "Tiktok Advertising",
+    src: "/image/services/service-3.jpg",
+    name: "Data Analysis",
+  },
+  {
+    src: "/image/services/service-4.jpg",
+    name: "Branding",
+  },
+  {
+    src: "/image/services/service-5.jpg",
+    name: "Google Ads",
   },
 ];
 const ProductLayout = () => {

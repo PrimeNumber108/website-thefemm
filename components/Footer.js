@@ -13,11 +13,10 @@ const Footer = () => {
     <>
       <Modal open={showModalContact} setOpen={setShowModalContact} title="Contact us">
         <p className="text-xl leading-8">
-          If you need any assistance or need your advice, please contact us via email. Our staff will contact you as
-          soon as possible.
-          <br />
-          <Link className="text-blue-500 underline" href="mailto:fineryworld.contact@gmail.com" target="_blank">
-            fineryworld.contact@gmail.com
+          We are here to listen and help. If you have any questions, problems or requests regarding our products or
+          brands, please contact us via email:{" "}
+          <Link className="text-blue-500 underline" href="mailto:lushpalette@gmail.com" target="_blank">
+            lushpalette@gmail.com
           </Link>
         </p>
       </Modal>
@@ -50,8 +49,8 @@ const Footer = () => {
         <h3 className="mb-1.5 text-lg font-bold">EASY RETURN & EXCHANGE PROCESS</h3>
         <p>
           Firstly, email (So We Can Send You Your Receipt) customer care at{" "}
-          <Link className="text-blue-500 underline" href="mailto:fineryworld.contact@gmail.com" target="_blank">
-            fineryworld.contact@gmail.com
+          <Link className="text-blue-500 underline" href="mailto:LUSH PALETTE.contact@gmail.com" target="_blank">
+            LUSH PALETTE.contact@gmail.com
           </Link>{" "}
           or call our support team. Our team is available to talk to you 9am-5pm, Monday to Friday! Include in your
           initial request how you wish to proceed (return or exchange) and we will walk you through the process of which
@@ -115,8 +114,8 @@ const Footer = () => {
         </div>
         <div className="flex-col flex-1 w-full gap-5 px-10 bg-black sm:px-28 lg:w-1/2 lg:py-0 py-14 flex-center">
           <p className="lg:w-[100%] text-heading text-2xl text-white text-center mb-1">
-            After 6 years of formation and development, FINERY WORLD has helped more than 14,000 customers grow revenue
-            in online marketing and advertising activities.
+            Over 15 years of experience, we&apos;ve become industry leaders, achieving milestones through dedication and
+            excellence.
           </p>
           <Link href="/about" className="block tracking-[1px] w-fit pb-2">
             <button className="btn btn-white w-fit">ABOUT US</button>

@@ -20,7 +20,9 @@ export default function Navbar() {
             </div>
 
             <div className="flex items-center justify-start gap-10 lg:flex-1 lg:w-0">
-              <Link href="/">FINERY WORLD</Link>
+              <Link href="/" className="uppercase">
+                Lush palette
+              </Link>
               <Popover.Group as="nav" className="hidden space-x-10 lg:flex">
                 <Link href="/our-services" className="text-primary hover:underline">
                   Our services

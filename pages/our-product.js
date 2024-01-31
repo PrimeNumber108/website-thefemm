@@ -4,62 +4,53 @@ import { v4 } from "uuid";
 
 const products = [
   {
-    name: "HolySmile Tooth Stain Removal",
+    name: "HolySmile Tooth Color Improving Toothpaste",
     image: "/image/products/product-1.jpg",
-    desc: ["Conceal yellow tones in teeth to improve and brighten the smile."],
+    desc: [
+      "To brighten and increase the brightness of your smile, cover up any yellow tones in your teeth.",
+      "30ml",
+      "Made in USA",
+    ],
   },
   {
-    name: "Mushroomhead Air Cushion CC Cream Brightening Skin Tone",
+    name: "Morri Exfoliating Body Lotion",
     image: "/image/products/product-2.jpg",
-    desc: ["Perfect makeup for 12 hours, excellent oil control,anti greasy, moisturize and correct uneven skin tone."],
+    desc: ["Eliminate dark spots, dullness, blemishes, and brighten your skin.", "100ml", "Made in USA"],
   },
   {
-    name: "Charmante Perfect Hand Serum",
-    image: "/image/products/product-3.jpg",
+    name: "Berari Vein Blurring Lotion",
+    image: "/image/products/product-3.png",
     desc: [
-      "Protect hands, safeguard them from environmental and household damage, smoothe skin, provide refreshing, revitalizing effect",
+      "Minimize the visibility of spider and varicose veins; lessen discomfort and edema; enhances blood flow",
+      "30ml",
+      "Made in USA",
     ],
   },
   {
-    name: "KASOMO Hair Growth Serum",
-    image: "/image/products/product-4.jpg",
+    name: "Charmante Softening and Brightening Hand Serum",
+    image: "/image/products/product-4.png",
     desc: [
-      "Repairs the damaged scalp, reactivate the cells for denser hair growth. It is your one-stop solution for all your hair growth concerns",
+      "Heals chapped skin, softens and moisturizes hand skin, and brightens its whiteness.",
+      "40ml",
+      "Made in USA",
     ],
   },
   {
-    name: "KASOMO Hair Nourishing Mask",
+    name: "Trezzen Hair Color Improving Soap",
     image: "/image/products/product-5.jpg",
-    desc: ["Perfect solution for damaged, coarse hair, help bring your smoothness back with just a few healing drops"],
-  },
-  {
-    name: "KASOMO Beard Brow Nourishing Oil",
-    image: "/image/products/product-6.png",
-    desc: ["Your best beard care to moisturize and soften your beard"],
-  },
-  {
-    name: "KASOMO Anti Hair Loss Shampoo",
-    image: "/image/products/product-7.jpg",
     desc: [
-      "Gently cleanses hair and scalp and removes excess follicle-clogging sebum to help maintain the optimal scalp environment for healthy looking hair.",
+      "Blacken hair to give it a smooth, glossy finish and effectively prevent dandruff, hair loss, and itching",
+      "60g",
+      "Made in USA",
     ],
   },
   {
-    name: "Morri Skin Peeling Gel",
-    image: "/image/products/product-8.jpg",
-    desc: ["Regular use helps exfoliate and maintain a more clear and even complexion, hydrate and smoothen skin."],
-  },
-  {
-    name: "Trezzen Darken Bar Soap Shampoo",
-    image: "/image/products/product-9.jpg",
-    desc: ["Reduces grey with every wash while also thickening hair up to 20%"],
-  },
-  {
-    name: "Berari Vein Repair Lotion",
-    fanpage: "https://www.facebook.com/profile.php?id=100093025314645",
-    image: "/image/products/product-10.jpg",
+    name: "Melasma treatment cream",
+    image: "/image/products/product-6.png",
     desc: [
-      "Reduce spider veins and broken blood vessels quickly, strengthen veins and vein wall function, which can help fade unsightly spider veins.",
+      "The moisturizer deeply hydrates and fades dark spots, pigmentation, and redness while soothing irritation with pro-retinol.",
+      "30g",
+      "Made in USA",
     ],
   },
 ];
@@ -67,7 +58,7 @@ const products = [
 const OurProduct = () => {
   return (
     <div className="px-3 py-6 lg:px-16 sm:px-6 sm:py-8 lg:py-10">
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:gap-4 xl:gap-8">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 md:gap-4 xl:gap-8">
         {products.map(({ name, image, desc }) => (
           <div key={v4()} className="flex flex-col overflow-hidden rounded shadow">
             <img src={image} alt="product" className="aspect-square"></img>

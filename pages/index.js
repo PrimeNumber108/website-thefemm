@@ -5,37 +5,37 @@ import classnames from "classnames";
 
 const users = [
   {
-    name: "Isabella R.",
+    name: "Christopher Lewis",
     comment:
-      "Professionalism at its best! The marketing team demonstrated a deep understanding of market trends. Their tailored campaigns elevated our brand perception and generated a positive buzz among our audience.",
-    image: "/image/users/user-1.jpg",
+      "Their Marketing service is truly impressive! The creativity and smart strategies enhance our advertising effectiveness while generating positive customer interactions.",
+    image: "/image/users/user-1.jpeg",
     rating: 5,
   },
   {
-    name: "Noah W.",
+    name: "Jessica Bennett",
     comment:
-      "Effective marketing solutions! This company's team not only met but exceeded our expectations. Their strategic campaigns resulted in increased leads and a notable spike in brand recognition.",
+      "Discover unique and effective marketing strategies from this service. The dedicated and creative team significantly boosted our brand visibility.",
     image: "/image/users/user-2.png",
     rating: 5,
   },
   {
-    name: "Grace M.",
+    name: "Ben Pham",
     comment:
-      "Top-tier marketing services! The team's proficiency in both traditional and digital channels set them apart. Their collaborative approach and attention to detail have been instrumental in our marketing success.",
-    image: "/image/users/user-3.jpg",
+      "heir marketing service is not only professional but also highly effective. Thanks to smart strategies and customer-centric focus, we've witnessed substantial growth in sales.",
+    image: "/image/users/user-3.jpeg",
     rating: 5,
   },
   {
-    name: "Mason D.",
+    name: "Emily Johnson",
     comment:
-      "Outstanding service! The marketing team's creative solutions and comprehensive strategies brought a new energy to our brand. The positive impact on our market presence was noticeable and immediate.",
-    image: "/image/users/user-4.jpg",
+      "With diversity in marketing strategies, this service exceeded our expectations. The agile support team and in-depth market understanding provide real value to our business.",
+    image: "/image/users/user-4.jpeg",
     rating: 4,
   },
   {
-    name: "Zoe L.",
+    name: "Ethan Turner",
     comment:
-      "Incredible marketing expertise! This company's team navigated the complexities of our industry effortlessly. Their fresh approach and timely execution significantly contributed to our brand's success.",
+      "I am very pleased with their marketing service. The creative strategy, high performance, and professionalism of the team helped us build a strong brand and attract new partners.",
     image: "/image/users/user-5.jpg",
     rating: 5,
   },
@@ -45,13 +45,15 @@ export default function Home() {
   return (
     <div>
       <div className="relative w-full h-screen">
-        <img src="/image/banners/banner-1.jpg" alt="BELLA BLOM" className="brightness-[0.8] w-full h-full" />
+        <video className="w-full brightness-90" autoPlay={true} muted loop>
+          <source src="/image/banners/banner-1.mp4" type="video/mp4"></source>
+        </video>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-full sm:w-[500px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-white text-heading">BELLA BLOM</h3>
+            <h3 className="text-white text-heading">LUZLURE</h3>
             <p className="leading-6 text-center text-white">
-              With unwavering confidence, we assure the delivery of highly effective and tailored marketing strategies
-              crafted specifically for your company&apos;s success.
+              Marketing is not the art of finding clever ways to dispose of what you make. It is the art of creating
+              genuine customer value
             </p>
           </div>
         </div>
@@ -59,8 +61,8 @@ export default function Home() {
       <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/image/banners/banner-2.jpg"
-            alt="BELLA BLOM"
+            src="/image/banners/banner-2.jpeg"
+            alt="LUZLURE"
             fill
             className="object-cover object-center w-full h-full -z-10 brightness-[0.8]"
           />
@@ -70,8 +72,7 @@ export default function Home() {
             <div className="flex items-center justify-center w-full h-full px-8 pt-16 lg:px-6 sm:p-16">
               <div className="w-full sm:w-[600px] flex justify-center items-center lg:text-start text-center flex-col gap-9">
                 <p className="px-8 text-2xl text-center text-white sm:px-0">
-                  Count on our unwavering confidence to provide uniquely customized marketing solutions aligned with
-                  your business goals.
+                  Good marketing makes the company look smart. Great marketing makes the customer feel smart
                 </p>
                 <Link href="/our-services" className="block text-white tracking-[1px] w-fit pb-2">
                   <button className="btn btn-primary w-fit">OUR SERVICES</button>
@@ -84,8 +85,8 @@ export default function Home() {
       <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/image/banners/banner-3.jpg"
-            alt="BELLA BLOM"
+            src="/image/banners/banner-3.jpeg"
+            alt="LUZLURE"
             fill
             className="object-cover object-center w-full h-full -z-10 brightness-[0.8]"
           />
@@ -95,8 +96,8 @@ export default function Home() {
             <div className="flex items-center justify-center w-full h-full px-8 pt-16 lg:px-6 sm:p-16">
               <div className="w-full sm:w-[600px] flex justify-center items-center lg:text-start text-center flex-col gap-9">
                 <p className="px-8 text-2xl text-center text-white sm:px-0">
-                  At the heart of our mission is a team of skilled professionals devoted to converting obstacles into
-                  opportunities, guaranteeing your success in an ever-changing business world.
+                  Great achievements in business are never accomplished by one person alone; they are the result of
+                  teamwork.
                 </p>
                 <Link href="/about" className="block text-white tracking-[1px] w-fit pb-2">
                   <button className="btn btn-primary w-fit">ABOUT US</button>
@@ -113,7 +114,7 @@ export default function Home() {
               key={index}
               className="flex flex-col items-center p-5 border border-solid border-[#5d92ff] rounded-lg gap-2.5"
             >
-              <img src={user.image} alt="" className="w-[130px] h-[130px] rounded-[50%] object-cover" />
+              <img src={user.image} alt="" className="w-[130px] h-[130px] rounded-[50%] object-cover object-center" />
               <p className="text-lg">{user.name}</p>
               <div className="flex gap-1">
                 {[...Array(5)].map((_, index) => (

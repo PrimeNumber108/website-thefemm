@@ -2,24 +2,16 @@ import React from "react";
 import Image from "next/image";
 const products = [
   {
-    src: "/image/services/service-1.jpg",
-    name: "Strategic Marketing Planning",
+    src: "/image/services/service-1.png",
+    name: "Facebook Marketing",
   },
   {
-    src: "/image/services/service-2.jpg",
-    name: "Digital Marketing Solutions",
+    src: "/image/services/service-2.jpeg",
+    name: "Google Marketing",
   },
   {
-    src: "/image/services/service-3.jpg",
-    name: "Brand Development and Positioning",
-  },
-  {
-    src: "/image/services/service-4.jpg",
-    name: "Advertising Campaign Management",
-  },
-  {
-    src: "/image/services/service-5.jpg",
-    name: "Market Research and Analytics",
+    src: "/image/services/service-3.jpeg",
+    name: "Tiktok Marketing",
   },
 ];
 

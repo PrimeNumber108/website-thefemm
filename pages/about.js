@@ -6,23 +6,23 @@ const About = () => {
     <>
       <div className="relative w-full min-h-screen">
         <Image
-          src={"/image/banners/banner-5.jpeg"}
-          alt="LUZLURE"
+          src={"/image/banners/banner-5.jpg"}
+          alt="ROSE BUDZZ"
           fill
           className="object-cover object-left-top w-full h-full -z-10 brightness-[0.85]"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-full sm:w-[500px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-white text-heading">LUZLURE</h3>
+            <h3 className="text-white text-heading">ROSE BUDZZ</h3>
             <p className="leading-6 text-center text-white">
-              Great achievements in business are never accomplished by one person alone; they are the result of
-              teamwork.
+              Established by a consortium of marketing specialists boasting two decades of experience, our company is
+              supported by a team of exceptionally qualified individuals.
             </p>
           </div>
         </div>
       </div>
       <div className="container max-w-[630px] flex-center flex-col gap-8 text-center">
-        <h3 className="text-5xl uppercase text-heading">MORE THAN 6 YEARS OF ESTABLISHMENT</h3>
+        <h3 className="text-5xl uppercase text-heading">Having been established for over 10 years</h3>
         <div>
           <svg height="100" viewBox="0 0 8 100" width="8" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -34,31 +34,34 @@ const About = () => {
           </svg>
         </div>
         <p>
-          LUZLURE was established in 2018. After six years of formation and development, our company currently has more
-          than 120 experienced employees in the fields of marketing and online advertising.
+          Our management team is composed of marketing specialists boasting over 25 years of collective expertise. They
+          have successfully overseen and executed extensive marketing campaigns for prominent brands in Cambodia and the
+          surrounding regions.
         </p>
         <p>
-          We have approached and cooperated with more than 20,000 individual and business customers in Cambodia, Asia,
-          and some countries in Europe.
+          Our workforce consists of more than 200 exceptionally skilled professionals. With prior experiences in leading
+          corporations both in Cambodia and abroad, they bring a unique blend of creativity, enthusiasm, and dedication
+          to our projects.
         </p>
       </div>
       <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src={"/image/banners/banner-6.png"}
-            alt="LUZLURE"
+            src={"/image/banners/banner-6.jpg"}
+            alt="ROSE BUDZZ"
             fill
-            className="object-cover object-center w-full h-full -z-10 brightness-[0.85]"
+            className="object-cover object-center w-full h-full -z-10 brightness-[0.8]"
           />
         </div>
         <div className={`absolute inset-0 flex justify-center items-center`}>
-          <div className="w-full sm:w-[650px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-center text-white text-heading">WHY SHOULD YOU CHOOSE US?</h3>
+          <div className="w-full sm:w-[700px] flex justify-center items-center flex-col lg:gap-9 gap-4">
+            <h3 className="text-center text-white text-heading">VALUES THAT WE CREATE</h3>
             <p className="leading-6 text-center text-white">
-              - Choose us for our unique and effective marketing strategy. <br />
-              - Creative, flexible team focused on real value for your business. <br />
-              - High performance, reasonable costs - the right choice. <br />
-              - Proven success, diverse marketing solutions, committed to your growth. <br />
+              Our commitment is centered around achieving the following benchmarks for you: <br />
+              - Dedicated consulting <br />
+              - Cost optimization <br />
+              - Revenue enhancement <br />
+              - High and rapid efficiency <br />
             </p>
           </div>
         </div>

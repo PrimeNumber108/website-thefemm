@@ -3,16 +3,16 @@ import React from "react";
 const TermsOfUse = () => {
   return (
     <div className="terms-of-use">
-      <p>LUZLURE Privacy Policy</p>
+      <p>ROSE BUDZZ Privacy Policy</p>
       <p>Last updated: February 17, 2022</p>
       <br />
       <p>
-        This Privacy Policy sets out how PerSé Beauty Inc. doing business as LUZLURE (“LUZLURE”, “we”, “our” or “us”)
-        uses and protects any information that you, the user, provide when you visit the website,
-        https://www.fegbeauty.com (“Website”), or use our LUZLURE mobile application (“App”) (collectively, “Service”).
-        Except as otherwise provided herein, this Privacy Policy applies to all services offered by us through our
-        Service. Except as otherwise provided herein, this Privacy Policy applies only to information collected through
-        our Service and not to information collected offline.
+        This Privacy Policy sets out how PerSé Beauty Inc. doing business as ROSE BUDZZ (“ROSE BUDZZ”, “we”, “our” or
+        “us”) uses and protects any information that you, the user, provide when you visit the website,
+        https://www.fegbeauty.com (“Website”), or use our ROSE BUDZZ mobile application (“App”) (collectively,
+        “Service”). Except as otherwise provided herein, this Privacy Policy applies to all services offered by us
+        through our Service. Except as otherwise provided herein, this Privacy Policy applies only to information
+        collected through our Service and not to information collected offline.
       </p>
       <br />
       <p>
@@ -37,7 +37,7 @@ const TermsOfUse = () => {
         Information you provide to us directly. We may collect personal information, such as your name, phone number,
         mailing address, location, payment information, and e-mail address when you register for our Service, take our
         personalized haircare survey, order products, or otherwise communicate with us. We may also collect any
-        communications between you and LUZLURE and any other information you provide to LUZLURE.
+        communications between you and ROSE BUDZZ and any other information you provide to ROSE BUDZZ.
       </p>
       <p>
         Data collected through the use of the Service. We collect information about how you use the Service and your
@@ -145,8 +145,8 @@ const TermsOfUse = () => {
         your inquiry;
       </p>
       <p>
-        Creation of a LUZLURE account: Your Personal Information will be retained until you require us to delete it or
-        after a reasonable period of inactivity;
+        Creation of a ROSE BUDZZ account: Your Personal Information will be retained until you require us to delete it
+        or after a reasonable period of inactivity;
       </p>
       <p>
         Your subscription to our direct marketing: Where you have consented to direct marketing, we retain your Personal

@@ -1,70 +1,65 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import React from "react";
 import { v4 } from "uuid";
 
 const products = [
   {
-    name: "HolySmile Teeth Whitening Booster",
+    name: "HolySmile Tooth Stain Removal",
     image: "/image/products/product-1.jpg",
-    desc: ["Removes deep-seated stains, enhance the whiteness of teeth.", "30ml", "From the USA"],
+    desc: ["Conceal yellow tones in teeth to improve and brighten the smile."],
   },
   {
-    name: "Air Cushion Cream Mushroom Head",
+    name: "Mushroomhead Air Cushion CC Cream Brightening Skin Tone",
     image: "/image/products/product-2.jpg",
-    desc: ["Lightweight, waterproof & long lasting matte concealer with mushroom head sponges.", "20g", "From the USA"],
+    desc: ["Perfect makeup for 12 hours, excellent oil control,anti greasy, moisturize and correct uneven skin tone."],
   },
   {
-    name: "Charmante Moisturizing Hand Serum",
+    name: "Charmante Perfect Hand Serum",
     image: "/image/products/product-3.jpg",
-    desc: ["Nourishing anti dry, split hand cream, not-greasy, anti crack hand care.", "40ml", "From the USA"],
+    desc: [
+      "Protect hands, safeguard them from environmental and household damage, smoothe skin, provide refreshing, revitalizing effect",
+    ],
   },
   {
-    name: "Kasomo Hair Regrowth Serum",
+    name: "KASOMO Hair Growth Serum",
     image: "/image/products/product-4.jpg",
-    desc: ["Promote hair growth thicker, support prevent hair loss and improve baldness.", "75ml", "From the USA"],
+    desc: [
+      "Repairs the damaged scalp, reactivate the cells for denser hair growth. It is your one-stop solution for all your hair growth concerns",
+    ],
   },
   {
-    name: "Kasomo Hair Repair Mask",
+    name: "KASOMO Hair Nourishing Mask",
     image: "/image/products/product-5.jpg",
-    desc: ["Nourishing hair smoother, preventing breakage, moisturizing and adding shine.", "250ml", "From the USA"],
+    desc: ["Perfect solution for damaged, coarse hair, help bring your smoothness back with just a few healing drops"],
   },
   {
-    name: "Kasomo Growth Oil For Beard & Eyebrow",
+    name: "KASOMO Beard Brow Nourishing Oil",
     image: "/image/products/product-6.png",
-    desc: ["Promote, strengthens, darkens, softens, moisturizes beard & eyebrow growth.", "30ml", "From the USA"],
+    desc: ["Your best beard care to moisturize and soften your beard"],
   },
   {
-    name: "Kasomo Organic Shampoo For Dandruff & Hair Loss",
+    name: "KASOMO Anti Hair Loss Shampoo",
     image: "/image/products/product-7.jpg",
-    desc: ["Restores damaged hair, prevents hair loss and relieves dandruff and itchy scalp.", "250ml", "From the USA"],
+    desc: [
+      "Gently cleanses hair and scalp and removes excess follicle-clogging sebum to help maintain the optimal scalp environment for healthy looking hair.",
+    ],
   },
   {
-    name: "Morri Peeling Gel For Dark Skin",
+    name: "Morri Skin Peeling Gel",
     image: "/image/products/product-8.jpg",
-    desc: [
-      "Cleanse dirt and refine pores, reveal a bright complexion. Remove dark spots, dullness and blemish,....",
-      "100ml",
-      "From the USA",
-    ],
+    desc: ["Regular use helps exfoliate and maintain a more clear and even complexion, hydrate and smoothen skin."],
   },
   {
-    name: "Trezzen Gray Reverse Shampoo Bar",
+    name: "Trezzen Darken Bar Soap Shampoo",
     image: "/image/products/product-9.jpg",
-    desc: [
-      "Transform your gray hair into dark color. Stimulates the growth and remove hair loss.",
-      "60g",
-      "From the USA",
-    ],
+    desc: ["Reduces grey with every wash while also thickening hair up to 20%"],
   },
   {
-    name: "Berari Veins Repair Relief Cream",
+    name: "Berari Vein Repair Lotion",
     fanpage: "https://www.facebook.com/profile.php?id=100093025314645",
     image: "/image/products/product-10.jpg",
     desc: [
-      "Diminish the appearance of varicose and spider veins. Promotes smooth skin and blood circulation.",
-      "30g",
-      "From the USA",
+      "Reduce spider veins and broken blood vessels quickly, strengthen veins and vein wall function, which can help fade unsightly spider veins.",
     ],
   },
 ];

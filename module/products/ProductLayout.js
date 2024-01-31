@@ -3,25 +3,26 @@ import Image from "next/image";
 const products = [
   {
     src: "/image/services/service-1.jpg",
-    name: "TikTok Marketing",
+    name: "Strategic Marketing Planning",
   },
   {
-    src: "/image/services/service-2.webp",
-    name: "Plan Development",
+    src: "/image/services/service-2.jpg",
+    name: "Digital Marketing Solutions",
   },
   {
     src: "/image/services/service-3.jpg",
-    name: "Data Analysis",
+    name: "Brand Development and Positioning",
   },
   {
     src: "/image/services/service-4.jpg",
-    name: "Branding",
+    name: "Advertising Campaign Management",
   },
   {
     src: "/image/services/service-5.jpg",
-    name: "Google Ads",
+    name: "Market Research and Analytics",
   },
 ];
+
 const ProductLayout = () => {
   return (
     <div className="relative container lg:pt-[90px] pt-[30px]">

@@ -15,8 +15,8 @@ const Footer = () => {
         <p className="text-xl leading-8">
           We are here to listen and help. If you have any questions, problems or requests regarding our products or
           brands, please contact us via email:{" "}
-          <Link className="text-blue-500 underline" href="mailto:lushpalette@gmail.com" target="_blank">
-            lushpalette@gmail.com
+          <Link className="text-blue-500 underline" href="mailto:hello.bellablom@gmail.com" target="_blank">
+            hello.bellablom@gmail.com
           </Link>
         </p>
       </Modal>
@@ -49,8 +49,8 @@ const Footer = () => {
         <h3 className="mb-1.5 text-lg font-bold">EASY RETURN & EXCHANGE PROCESS</h3>
         <p>
           Firstly, email (So We Can Send You Your Receipt) customer care at{" "}
-          <Link className="text-blue-500 underline" href="mailto:LUSH PALETTE.contact@gmail.com" target="_blank">
-            LUSH PALETTE.contact@gmail.com
+          <Link className="text-blue-500 underline" href="mailto:BELLA BLOM.contact@gmail.com" target="_blank">
+            BELLA BLOM.contact@gmail.com
           </Link>{" "}
           or call our support team. Our team is available to talk to you 9am-5pm, Monday to Friday! Include in your
           initial request how you wish to proceed (return or exchange) and we will walk you through the process of which
@@ -114,7 +114,7 @@ const Footer = () => {
         </div>
         <div className="flex-col flex-1 w-full gap-5 px-10 bg-black sm:px-28 lg:w-1/2 lg:py-0 py-14 flex-center">
           <p className="lg:w-[100%] text-heading text-2xl text-white text-center mb-1">
-            Over 15 years of experience, we&apos;ve become industry leaders, achieving milestones through dedication and
+            Founded 2010, our company has a rich history marked by continuous growth, innovation, and a commitment to
             excellence.
           </p>
           <Link href="/about" className="block tracking-[1px] w-fit pb-2">

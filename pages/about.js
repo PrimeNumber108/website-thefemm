@@ -6,8 +6,8 @@ const About = () => {
     <>
       <div className="relative w-full min-h-screen">
         <Image
-          src={"/image/banners/banner-4.jpg"}
-          alt="LUSH PALETTE"
+          src={"/image/banners/banner-5.jpg"}
+          alt="BELLA BLOM"
           fill
           className="object-cover object-left-top w-full h-full -z-10 brightness-[0.85]"
         />
@@ -15,14 +15,14 @@ const About = () => {
           <div className="w-full sm:w-[500px] flex justify-center items-center flex-col lg:gap-9 gap-4">
             <h3 className="text-white text-heading">LUST PALETTE</h3>
             <p className="leading-6 text-center text-white">
-              Our mission is to empower businesses through innovation and growth, making a positive impact on our
-              clients and communities.
+              At the heart of our mission is a team of skilled professionals devoted to converting obstacles into
+              opportunities, guaranteeing your success in an ever-changing business world.
             </p>
           </div>
         </div>
       </div>
       <div className="container max-w-[630px] flex-center flex-col gap-8 text-center">
-        <h3 className="text-5xl text-heading">FROM THE STARTING POINT TO THE PEAK</h3>
+        <h3 className="text-5xl uppercase text-heading">More than 6 years of establishment</h3>
         <div>
           <svg height="100" viewBox="0 0 8 100" width="8" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -34,29 +34,34 @@ const About = () => {
           </svg>
         </div>
         <p>
-          Over the years, our achievements have been marked by sustained excellence. We&apos;ve garnered industry
-          recognition for innovative solutions, received accolades for outstanding customer service.
+          The leadership of our company comprises marketing experts with over two decades of experience, providing
+          guidance and overseeing numerous extensive marketing initiatives for renowned brands all over the world.
         </p>
         <p>
-          These achievements reflect our ongoing commitment to delivering unparalleled quality and setting new standards
-          in the ever-evolving business landscape.
+          Our team consists of over 100 extensively qualified individuals, each with prior experience at prominent
+          corporations in Cambodia and internationally. Their collective attributes include creativity, enthusiasm, and
+          unwavering dedication to their work.
         </p>
       </div>
       <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src={"/image/banners/banner-5.jpg"}
-            alt="LUSH PALETTE"
+            src={"/image/banners/banner-6.jpg"}
+            alt="BELLA BLOM"
             fill
             className="object-cover object-center w-full h-full -z-10 brightness-[0.85]"
           />
         </div>
         <div className={`absolute inset-0 flex justify-center items-center`}>
           <div className="w-full sm:w-[650px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-center text-white text-heading">OUR DEDICATION</h3>
-            <p className="leading-6 text-center text-white">
-              Committed to excellence, we innovate, exceed expectations, and make a positive impact in every aspect of
-              our business, fostering enduring partnerships.
+            <h3 className="text-center text-white text-heading">OUR COMMITMENTS</h3>
+            <p className="leading-6 text-center text-white max-w-[400px]">
+              - Your success is our mission <br />
+              - Maintain the highest standards of quality and professionalism <br />
+              - Deliver unparalleled excellence in every aspect of our service <br />
+              - Prioritize transparency, integrity, and open communication, fostering trust with our clients and
+              partners <br />
+              -Consistently innovate and adapt <br />
             </p>
           </div>
         </div>

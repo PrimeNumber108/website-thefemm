@@ -5,37 +5,37 @@ import classnames from "classnames";
 
 const users = [
   {
-    name: "Emily J.",
+    name: "Isabella R.",
     comment:
-      "Exceptional marketing services! Their innovative strategies and attention to detail significantly boosted our brand visibility. A pleasure to work with!",
+      "Professionalism at its best! The marketing team demonstrated a deep understanding of market trends. Their tailored campaigns elevated our brand perception and generated a positive buzz among our audience.",
     image: "/image/users/user-1.jpg",
     rating: 5,
   },
   {
-    name: "Alex M.",
+    name: "Noah W.",
     comment:
-      "Incredible results! The marketing services provided by this company are truly top-notch. Highly recommended!",
-    image: "/image/users/user-2.jpg",
+      "Effective marketing solutions! This company's team not only met but exceeded our expectations. Their strategic campaigns resulted in increased leads and a notable spike in brand recognition.",
+    image: "/image/users/user-2.png",
     rating: 5,
   },
   {
-    name: "Sophie R.",
+    name: "Grace M.",
     comment:
-      "Outstanding experience with this marketing firm! The team's creativity and strategic approach delivered measurable results for our business. Looking forward to continuing our successful partnership.",
+      "Top-tier marketing services! The team's proficiency in both traditional and digital channels set them apart. Their collaborative approach and attention to detail have been instrumental in our marketing success.",
     image: "/image/users/user-3.jpg",
     rating: 5,
   },
   {
-    name: "Daniel H.",
+    name: "Mason D.",
     comment:
-      "Professional and effective marketing services! They tailored strategies to our unique needs, resulting in increased brand recognition and customer engagement.",
+      "Outstanding service! The marketing team's creative solutions and comprehensive strategies brought a new energy to our brand. The positive impact on our market presence was noticeable and immediate.",
     image: "/image/users/user-4.jpg",
     rating: 4,
   },
   {
-    name: "Olivia W.",
+    name: "Zoe L.",
     comment:
-      "Impeccable service! The marketing team demonstrated a deep understanding of our industry. Their campaigns were not only visually appealing but also drove tangible results.",
+      "Incredible marketing expertise! This company's team navigated the complexities of our industry effortlessly. Their fresh approach and timely execution significantly contributed to our brand's success.",
     image: "/image/users/user-5.jpg",
     rating: 5,
   },
@@ -45,15 +45,13 @@ export default function Home() {
   return (
     <div>
       <div className="relative w-full h-screen">
-        <video className="brightness-90" autoPlay={true} muted loop>
-          <source src="/video/banner.mp4" type="video/mp4"></source>
-        </video>
+        <img src="/image/banners/banner-1.jpg" alt="BELLA BLOM" className="brightness-[0.8] w-full h-full" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-full sm:w-[500px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-white text-heading">LUSH PALETTE</h3>
+            <h3 className="text-white text-heading">BELLA BLOM</h3>
             <p className="leading-6 text-center text-white">
-              Where innovation meets strategy to elevate your brand and drive unparalleled success in the dynamic world
-              of business.
+              With unwavering confidence, we assure the delivery of highly effective and tailored marketing strategies
+              crafted specifically for your company&apos;s success.
             </p>
           </div>
         </div>
@@ -61,8 +59,8 @@ export default function Home() {
       <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/image/banners/banner-1.jpg"
-            alt="LUSH PALETTE"
+            src="/image/banners/banner-2.jpg"
+            alt="BELLA BLOM"
             fill
             className="object-cover object-center w-full h-full -z-10 brightness-[0.8]"
           />
@@ -72,8 +70,8 @@ export default function Home() {
             <div className="flex items-center justify-center w-full h-full px-8 pt-16 lg:px-6 sm:p-16">
               <div className="w-full sm:w-[600px] flex justify-center items-center lg:text-start text-center flex-col gap-9">
                 <p className="px-8 text-2xl text-center text-white sm:px-0">
-                  We offer a range of services including brand development, digital marketing, social media management,
-                  and data-driven insights.
+                  Count on our unwavering confidence to provide uniquely customized marketing solutions aligned with
+                  your business goals.
                 </p>
                 <Link href="/our-services" className="block text-white tracking-[1px] w-fit pb-2">
                   <button className="btn btn-primary w-fit">OUR SERVICES</button>
@@ -86,8 +84,8 @@ export default function Home() {
       <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src="/image/banners/banner-2.jpg"
-            alt="LUSH PALETTE"
+            src="/image/banners/banner-3.jpg"
+            alt="BELLA BLOM"
             fill
             className="object-cover object-center w-full h-full -z-10 brightness-[0.8]"
           />
@@ -97,8 +95,8 @@ export default function Home() {
             <div className="flex items-center justify-center w-full h-full px-8 pt-16 lg:px-6 sm:p-16">
               <div className="w-full sm:w-[600px] flex justify-center items-center lg:text-start text-center flex-col gap-9">
                 <p className="px-8 text-2xl text-center text-white sm:px-0">
-                  Our team collectively boasts decades of industry experience. From seasoned strategists to creative
-                  minds, our professionals bring a wealth of expertise.
+                  At the heart of our mission is a team of skilled professionals devoted to converting obstacles into
+                  opportunities, guaranteeing your success in an ever-changing business world.
                 </p>
                 <Link href="/about" className="block text-white tracking-[1px] w-fit pb-2">
                   <button className="btn btn-primary w-fit">ABOUT US</button>

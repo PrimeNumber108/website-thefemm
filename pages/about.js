@@ -6,23 +6,22 @@ const About = () => {
     <>
       <div className="relative w-full min-h-screen">
         <Image
-          src={"/image/banners/banner-5.jpg"}
-          alt="ROSE BUDZZ"
+          src={"/image/banners/banner-5.avif"}
+          alt="CATCHYN"
           fill
           className="object-cover object-left-top w-full h-full -z-10 brightness-[0.85]"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-full sm:w-[500px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-white text-heading">ROSE BUDZZ</h3>
+            <h3 className="text-white text-heading">CATCHYN</h3>
             <p className="leading-6 text-center text-white">
-              Established by a consortium of marketing specialists boasting two decades of experience, our company is
-              supported by a team of exceptionally qualified individuals.
+              We provide online marketing and advertising solutions for businesses.
             </p>
           </div>
         </div>
       </div>
       <div className="container max-w-[630px] flex-center flex-col gap-8 text-center">
-        <h3 className="text-5xl uppercase text-heading">Having been established for over 10 years</h3>
+        <h3 className="text-5xl text-heading">MORE THAN 4 YEARS OF ESTABLISHMENT</h3>
         <div>
           <svg height="100" viewBox="0 0 8 100" width="8" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -34,34 +33,31 @@ const About = () => {
           </svg>
         </div>
         <p>
-          Our management team is composed of marketing specialists boasting over 25 years of collective expertise. They
-          have successfully overseen and executed extensive marketing campaigns for prominent brands in Cambodia and the
-          surrounding regions.
+          Our company was established in 2020. After 4 years of formation and development, CATCHYN currently has more
+          than 100 employees, including a team of experienced experts in the field of Marketing and online advertising.
         </p>
         <p>
-          Our workforce consists of more than 200 exceptionally skilled professionals. With prior experiences in leading
-          corporations both in Cambodia and abroad, they bring a unique blend of creativity, enthusiasm, and dedication
-          to our projects.
+          We have reached more than 1,000 customers who are individuals and businesses in Southeast Asia and Northeast
+          Asia.
         </p>
       </div>
       <div className="relative w-full min-h-screen">
         <div className="absolute inset-0">
           <Image
-            src={"/image/banners/banner-6.jpg"}
-            alt="ROSE BUDZZ"
+            src={"/image/banners/banner-6.jpeg"}
+            alt="CATCHYN"
             fill
-            className="object-cover object-center w-full h-full -z-10 brightness-[0.8]"
+            className="object-cover object-center w-full h-full -z-10 brightness-[0.9]"
           />
         </div>
         <div className={`absolute inset-0 flex justify-center items-center`}>
           <div className="w-full sm:w-[700px] flex justify-center items-center flex-col lg:gap-9 gap-4">
-            <h3 className="text-center text-white text-heading">VALUES THAT WE CREATE</h3>
+            <h3 className="text-center text-white text-heading">OUR COMMITMENTS</h3>
             <p className="leading-6 text-center text-white">
-              Our commitment is centered around achieving the following benchmarks for you: <br />
-              - Dedicated consulting <br />
-              - Cost optimization <br />
-              - Revenue enhancement <br />
-              - High and rapid efficiency <br />
+              We are proud of the values we bring: <br />
+              - Committed to revenue growth <br />
+              - Thorough consultation <br />
+              - Optimize advertising and marketing costs <br />
             </p>
           </div>
         </div>

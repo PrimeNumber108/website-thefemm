@@ -1,90 +1,83 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
 import React from "react";
 import { v4 } from "uuid";
 
 const products = [
   {
-    name: "HolySmile Serum for Teeth Whitening",
-    fanpage: "https://www.facebook.com/LoungeForLady",
-    image: "/image/products/product-1.jpg",
+    name: "HolySmile Teeth Color Corrector",
+    image: "/image/products/product-1.png",
     desc: [
-      "Mask the yellow hues in your teeth, promoting an improvement and amplification of your radiant smile.",
-      "30ml",
-      "Made in USA",
-    ],
-  },
-  {
-    name: "CC Cream with Mushroom Applicator",
-    fanpage: "https://www.facebook.com/bestcccream",
-    image: "/image/products/product-2.png",
-    desc: [
-      "Hides blemishes, evens out skin tone, and reduces the appearance of dark spots and redness, resulting in a naturally beautiful and glowing complexion. ",
-      "20ml",
-      "Made in USA",
-    ],
-  },
-  {
-    name: "Serum for hand skin - Charmante",
-    fanpage: "https://www.facebook.com/wegiveyourealbeauty/?ref=page_internal",
-    image: "/image/products/product-3.jpg",
-    desc: [
-      "Hydrates and softens the skin on your hands, repairing chapped areas and imparting a radiant brightness to enhance the overall appearance of your hands",
+      "Instantly whiten teeth, give you the brightest smile and reduces the saturation of yellow stains.",
       "40ml",
-      "Made in USA",
+      "From the U.S",
     ],
   },
   {
-    name: "Kasomo Hair Regrowth Serum",
-    fanpage: "https://www.facebook.com/Kasomohairtherapy",
-    image: "/image/products/product-4.jpg",
-    desc: ["Accelerate the growth of your beard and hair with a stimulating formula.", "75ml", "Made in USA"],
+    name: "CC Cream -Mushroom Head Air Cushion",
+    image: "/image/products/product-2.png",
+    desc: ["Make your base makeup no longer heavy.", "20g", "From the U.S"],
   },
   {
-    name: "Kasomo Masque for smoothening hair",
-    fanpage: "https://www.facebook.com/Kasomohairmask",
-    image: "/image/products/product-5.jpg",
-    desc: ["Enhance hair smoothness and thickness with our specialized formula.", "250ml", "Made in USA"],
+    name: "Charmante Hand Skin Serum",
+    image: "/image/products/product-3.jpg",
+    desc: ["Reduce wrinkles, instantly hydrate, soothe the skin.", "40ml", "From the U.S"],
   },
   {
-    name: "Kasomo Serum for Beard and Brow Growth",
-    fanpage: "https://www.facebook.com/Kasomobeardbrowserum",
-    image: "/image/products/product-6.jpg",
-    desc: ["Promote and support the growth of your beard and eyebrows.", "30ml", "Made in USA"],
+    name: "Kasomo Hair Growth Spray",
+    image: "/image/products/product-4.jpeg",
+    desc: ["Stimulates hair growth, prevents hair loss and improves baldness.", "75ml", "From the U.S"],
   },
   {
-    name: "Berari Vein Repair Cream",
-    fanpage: "https://www.facebook.com/profile.php?id=100093025314645",
-    image: "/image/products/product-7.jpg",
+    name: "Kasomo Hair Mask",
+    image: "/image/products/product-5.png",
     desc: [
-      "Reduce the visibility of varicose and spider veins, alleviate swelling and pain, and enhance blood circulation.",
-      "30g",
-      "Made in USA",
+      "Hair mask for healthy, silky hair extracted from vegan. Eliminate frizzy, dry & tangled hair in secs.",
+      "From the U.S",
     ],
   },
   {
-    name: "Kasomo Shampoo for reducing hair loss",
-    fanpage: "https://www.facebook.com/Kasomohairmask",
-    image: "/image/products/product-8.jpg",
-    desc: ["Enhance hair growth and promote thicker strands to combat hair loss effectively.", "250ml", "Made in USA"],
+    name: "Kasomo Beard And Eyebrow Growth Serum",
+    image: "/image/products/product-6.jpeg",
+    desc: [
+      "Regrow beards & eyebrows; thicken, lengthen beards & eyebrows; produce stronger & denser beards; Reduce thin brows, breakage.",
+      "From the U.S",
+    ],
+  },
+  {
+    name: "Kasomo Shampoo For Hair Loss And Dandruff",
+    image: "/image/products/product-7.jpg",
+    desc: ["Prevents hair loss and stops dandruff after 7 days of use.", "From the U.S"],
+  },
+  {
+    name: "Morri Peeling Lotion",
+    image: "/image/products/product-8.jpeg",
+    desc: ["Remove dead skin and dark spots, helps your skin become smoother and whiter.", "100ml"],
+  },
+  {
+    name: "Trezzen Shampoo Bar Soap (Upgrade version)",
+    image: "/image/products/product-9.jpeg",
+    desc: [
+      "Restore natural hair color, as your daily ordinary shampoo, make your gray or white hair turn into a young and vivid dark color again.",
+      "60g",
+      "From the U.S",
+    ],
+  },
+  {
+    name: "Berari Vein Care Fading Cream (Upgrade version - More effective)",
+    image: "/image/products/product-10.jpeg",
+    desc: ["Reducing Varicose Veins and Spiders,  Improves blood circulation.", "30g", "From the U.S"],
   },
 ];
 
 const OurProduct = () => {
   return (
     <div className="px-3 py-6 lg:px-16 sm:px-6 sm:py-8 lg:py-10">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 md:gap-4 xl:gap-6">
-        {products.map(({ name, fanpage, image, desc }) => (
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 md:gap-4 xl:gap-6">
+        {products.map(({ name, image, desc }) => (
           <div key={v4()} className="flex flex-col overflow-hidden rounded shadow">
-            <Link target="_blank" href={fanpage}>
-              <img src={image} alt="product" className="aspect-square"></img>
-            </Link>
+            <img src={image} alt="product" className="aspect-square"></img>
             <div className="flex flex-col gap-3 px-3 pt-4 pb-5">
-              <p className="text-[16px] text-center hover:text-blue-400 text-black leading-6">
-                <Link target="_blank" href={fanpage}>
-                  {name}
-                </Link>
-              </p>
+              <p className="text-[16px] text-center hover:text-blue-400 text-black leading-6">{name}</p>
               <div className="flex-center">
                 <ul className="space-y-1">
                   {desc.map((text) => (
@@ -93,13 +86,6 @@ const OurProduct = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-              <div className="flex-center">
-                <Link target="_blank" href={fanpage}>
-                  <p className="px-3 py-1.5 uppercase bg-[#EE427F] text-white block w-fit rounded-md text-sm hover:bg-[#ff78a7]">
-                    View fanpage
-                  </p>
-                </Link>
               </div>
             </div>
           </div>

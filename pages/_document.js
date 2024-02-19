@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <title>ROSE BUDZZ</title>
+      <title>CATCHYN</title>
       <Head>
         <meta name="facebook-domain-verification" content="sk8uciqe33iws1wmkfm86lypy146fz" />
       </Head>

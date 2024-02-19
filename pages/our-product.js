@@ -5,72 +5,56 @@ import { v4 } from "uuid";
 const products = [
   {
     name: "HolySmile Tooth Color Removal",
-    image: "/image/products/product-1.jpg",
-    desc: ["Conceal yellow tones in teeth to enhance and brighten your smile."],
+    image: "/image/products/product-1.png",
+    desc: ["Charmante hand skin softening and brightening serum.", "40ml", "Made in USA"],
   },
   {
-    name: "Mushroomhead Air Cushion CC Cream",
+    name: "Trezzen Hair Color Improving Bar Soap",
     image: "/image/products/product-2.jpg",
     desc: [
-      "Perfect makeup for 12 hours, with outstanding oil control, anti-greasy properties, moisturizing, and correcting uneven skin tone.",
+      "Hair blackening soap makes hair shiny and effectively prevents dandruff, hair loss, and itching.",
+      "60g",
+      "Made in USA",
     ],
   },
   {
-    name: "Charmante Perfect Hand Moisturizing Serum",
-    image: "/image/products/product-3.png",
+    name: "Melasma treatment cream",
+    image: "/image/products/product-3.jpg",
     desc: [
-      "Protect hands from environmental and home harm, smooth the skin, and deliver a refreshing, invigorating sensation.",
+      "The moisturizer deeply hydrates and fades dark spots, pigmentation, and redness while soothing irritation with pro-retinol.",
+      "30g",
+      "Made in USA",
     ],
   },
   {
-    name: "KASOMO Hair ReGrowth Serum",
-    image: "/image/products/product-4.png",
+    name: "HolySmile Teeth Color Improving Toothpaste",
+    image: "/image/products/product-4.jpg",
     desc: [
-      "Repairs the damaged scalp and reactivates the cells to promote denser hair growth. It is a one-stop answer for all of your hair growth difficulties.",
+      "To brighten and increase the brightness of your smile, cover up any yellow tones in your teeth.",
+      "30ml",
+      "Made in USA",
     ],
   },
   {
-    name: "KASOMO Hair Nourishing Mask",
+    name: "Berari Vein Blurring Lotion",
     image: "/image/products/product-5.png",
-    desc: ["Perfect solution for damaged, coarse hair, help bring your smoothness back with just a few healing drops"],
+    desc: [
+      "Minimize the visibility of spider and varicose veins; lessen discomfort and edema; enhances blood flow.",
+      "30ml",
+      "Made in USA",
+    ],
   },
   {
     name: "KASOMO Beard - Brow Nourishing Oil",
     image: "/image/products/product-6.jpg",
-    desc: ["Best Beard Care for Moisturizing and Softening"],
-  },
-  {
-    name: "KASOMO Anti Hair Loss Shampoo",
-    image: "/image/products/product-7.jpg",
-    desc: [
-      "Gently washes the hair and scalp, removing excess follicle-clogging sebum to help maintain the ideal scalp environment for healthy-looking hair.",
-    ],
-  },
-  {
-    name: "Morri Skin Peeling Gel",
-    image: "/image/products/product-8.jpg",
-    desc: [
-      "Regular application exfoliates and maintains a clearer, more even complexion while also hydrating and smoothing the skin.",
-    ],
-  },
-  {
-    name: "Trezzen Darken Bar Soap",
-    image: "/image/products/product-9.jpg",
-    desc: ["Reduces grey with every wash while also thickening hair up to 85%"],
-  },
-  {
-    name: "Berari Vein Repair Cream",
-    image: "/image/products/product-10.jpg",
-    desc: [
-      "Reduce spider veins and fractured blood vessels rapidly, strengthen veins, and improve vein wall function to help fade unattractive spider veins.",
-    ],
+    desc: ["The cream removes blemishes, dullness, blemishes and brightens your skin.", "100ml", "Made in USA"],
   },
 ];
 
 const OurProduct = () => {
   return (
     <div className="px-3 py-6 lg:px-16 sm:px-6 sm:py-8 lg:py-10">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 md:gap-4 xl:gap-6">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 md:gap-4 xl:gap-6">
         {products.map(({ name, image, desc }) => (
           <div key={v4()} className="flex flex-col overflow-hidden rounded shadow">
             <img src={image} alt="product" className="aspect-square"></img>

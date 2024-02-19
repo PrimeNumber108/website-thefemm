@@ -3,13 +3,13 @@ import React from "react";
 const TermsOfUse = () => {
   return (
     <div className="terms-of-use">
-      <p>CATCHYN Privacy Policy</p>
+      <p>luxorir Privacy Policy</p>
       <p>Last updated: February 17, 2022</p>
       <br />
       <p>
-        This Privacy Policy sets out how PerSé Beauty Inc. doing business as CATCHYN (“CATCHYN”, “we”, “our” or “us”)
+        This Privacy Policy sets out how PerSé Beauty Inc. doing business as luxorir (“luxorir”, “we”, “our” or “us”)
         uses and protects any information that you, the user, provide when you visit the website,
-        https://www.fegbeauty.com (“Website”), or use our CATCHYN mobile application (“App”) (collectively, “Service”).
+        https://www.fegbeauty.com (“Website”), or use our luxorir mobile application (“App”) (collectively, “Service”).
         Except as otherwise provided herein, this Privacy Policy applies to all services offered by us through our
         Service. Except as otherwise provided herein, this Privacy Policy applies only to information collected through
         our Service and not to information collected offline.
@@ -37,7 +37,7 @@ const TermsOfUse = () => {
         Information you provide to us directly. We may collect personal information, such as your name, phone number,
         mailing address, location, payment information, and e-mail address when you register for our Service, take our
         personalized haircare survey, order products, or otherwise communicate with us. We may also collect any
-        communications between you and CATCHYN and any other information you provide to CATCHYN.
+        communications between you and luxorir and any other information you provide to luxorir.
       </p>
       <p>
         Data collected through the use of the Service. We collect information about how you use the Service and your
@@ -145,7 +145,7 @@ const TermsOfUse = () => {
         your inquiry;
       </p>
       <p>
-        Creation of a CATCHYN account: Your Personal Information will be retained until you require us to delete it or
+        Creation of a luxorir account: Your Personal Information will be retained until you require us to delete it or
         after a reasonable period of inactivity;
       </p>
       <p>

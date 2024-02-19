@@ -4,68 +4,66 @@ import { v4 } from "uuid";
 
 const products = [
   {
-    name: "HolySmile Teeth Color Corrector",
-    image: "/image/products/product-1.png",
+    name: "HolySmile Tooth Color Removal",
+    image: "/image/products/product-1.jpg",
+    desc: ["Conceal yellow tones in teeth to enhance and brighten your smile."],
+  },
+  {
+    name: "Mushroomhead Air Cushion CC Cream",
+    image: "/image/products/product-2.jpg",
     desc: [
-      "Instantly whiten teeth, give you the brightest smile and reduces the saturation of yellow stains.",
-      "40ml",
-      "From the U.S",
+      "Perfect makeup for 12 hours, with outstanding oil control, anti-greasy properties, moisturizing, and correcting uneven skin tone.",
     ],
   },
   {
-    name: "CC Cream -Mushroom Head Air Cushion",
-    image: "/image/products/product-2.png",
-    desc: ["Make your base makeup no longer heavy.", "20g", "From the U.S"],
+    name: "Charmante Perfect Hand Moisturizing Serum",
+    image: "/image/products/product-3.png",
+    desc: [
+      "Protect hands from environmental and home harm, smooth the skin, and deliver a refreshing, invigorating sensation.",
+    ],
   },
   {
-    name: "Charmante Hand Skin Serum",
-    image: "/image/products/product-3.jpg",
-    desc: ["Reduce wrinkles, instantly hydrate, soothe the skin.", "40ml", "From the U.S"],
+    name: "KASOMO Hair ReGrowth Serum",
+    image: "/image/products/product-4.png",
+    desc: [
+      "Repairs the damaged scalp and reactivates the cells to promote denser hair growth. It is a one-stop answer for all of your hair growth difficulties.",
+    ],
   },
   {
-    name: "Kasomo Hair Growth Spray",
-    image: "/image/products/product-4.jpeg",
-    desc: ["Stimulates hair growth, prevents hair loss and improves baldness.", "75ml", "From the U.S"],
-  },
-  {
-    name: "Kasomo Hair Mask",
+    name: "KASOMO Hair Nourishing Mask",
     image: "/image/products/product-5.png",
-    desc: [
-      "Hair mask for healthy, silky hair extracted from vegan. Eliminate frizzy, dry & tangled hair in secs.",
-      "From the U.S",
-    ],
+    desc: ["Perfect solution for damaged, coarse hair, help bring your smoothness back with just a few healing drops"],
   },
   {
-    name: "Kasomo Beard And Eyebrow Growth Serum",
-    image: "/image/products/product-6.jpeg",
-    desc: [
-      "Regrow beards & eyebrows; thicken, lengthen beards & eyebrows; produce stronger & denser beards; Reduce thin brows, breakage.",
-      "From the U.S",
-    ],
+    name: "KASOMO Beard - Brow Nourishing Oil",
+    image: "/image/products/product-6.jpg",
+    desc: ["Best Beard Care for Moisturizing and Softening"],
   },
   {
-    name: "Kasomo Shampoo For Hair Loss And Dandruff",
+    name: "KASOMO Anti Hair Loss Shampoo",
     image: "/image/products/product-7.jpg",
-    desc: ["Prevents hair loss and stops dandruff after 7 days of use.", "From the U.S"],
-  },
-  {
-    name: "Morri Peeling Lotion",
-    image: "/image/products/product-8.jpeg",
-    desc: ["Remove dead skin and dark spots, helps your skin become smoother and whiter.", "100ml"],
-  },
-  {
-    name: "Trezzen Shampoo Bar Soap (Upgrade version)",
-    image: "/image/products/product-9.jpeg",
     desc: [
-      "Restore natural hair color, as your daily ordinary shampoo, make your gray or white hair turn into a young and vivid dark color again.",
-      "60g",
-      "From the U.S",
+      "Gently washes the hair and scalp, removing excess follicle-clogging sebum to help maintain the ideal scalp environment for healthy-looking hair.",
     ],
   },
   {
-    name: "Berari Vein Care Fading Cream (Upgrade version - More effective)",
-    image: "/image/products/product-10.jpeg",
-    desc: ["Reducing Varicose Veins and Spiders,  Improves blood circulation.", "30g", "From the U.S"],
+    name: "Morri Skin Peeling Gel",
+    image: "/image/products/product-8.jpg",
+    desc: [
+      "Regular application exfoliates and maintains a clearer, more even complexion while also hydrating and smoothing the skin.",
+    ],
+  },
+  {
+    name: "Trezzen Darken Bar Soap",
+    image: "/image/products/product-9.jpg",
+    desc: ["Reduces grey with every wash while also thickening hair up to 85%"],
+  },
+  {
+    name: "Berari Vein Repair Cream",
+    image: "/image/products/product-10.jpg",
+    desc: [
+      "Reduce spider veins and fractured blood vessels rapidly, strengthen veins, and improve vein wall function to help fade unattractive spider veins.",
+    ],
   },
 ];
 

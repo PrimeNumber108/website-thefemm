@@ -30,7 +30,7 @@ const users = [
     comment:
       "What sets them apart is their adept integration of cutting-edge technologies into their marketing tactics. It has streamlined our outreach and engagement processes effectively.",
     image: "/image/users/user-4.jpg",
-    rating: 4,
+    rating: 5,
   },
   {
     name: "Olivia Johnson",
